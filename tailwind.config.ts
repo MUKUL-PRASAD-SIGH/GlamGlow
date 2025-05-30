@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,15 +53,28 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+				// Neon Punk Color Palette
+				neon: {
+					pink: '#ff10f0',
+					blue: '#00d4ff',
+					green: '#39ff14',
+					purple: '#bf00ff',
+					orange: '#ff6600',
+					yellow: '#ffff00',
+					cyan: '#00ffff',
+					magenta: '#ff00ff',
+				},
+				dark: {
+					900: '#0a0a0f',
+					800: '#1a1a2e',
+					700: '#16213e',
+					600: '#0f172a',
+				},
+				glow: {
+					pink: 'rgba(255, 16, 240, 0.3)',
+					blue: 'rgba(0, 212, 255, 0.3)',
+					green: 'rgba(57, 255, 20, 0.3)',
+					purple: 'rgba(191, 0, 255, 0.3)',
 				}
 			},
 			borderRadius: {
@@ -84,12 +98,54 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+				'neon-pulse': {
+					'0%, 100%': {
+						boxShadow: '0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor',
+					},
+					'50%': {
+						boxShadow: '0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor',
+					},
+				},
+				'glow': {
+					'0%, 100%': {
+						filter: 'brightness(1) drop-shadow(0 0 10px currentColor)',
+					},
+					'50%': {
+						filter: 'brightness(1.2) drop-shadow(0 0 20px currentColor)',
+					},
+				},
+				'slide-in': {
+					'0%': {
+						transform: 'translateX(-100%)',
+						opacity: '0',
+					},
+					'100%': {
+						transform: 'translateX(0)',
+						opacity: '1',
+					},
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)',
+					},
+					'50%': {
+						transform: 'translateY(-10px)',
+					},
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'neon-pulse': 'neon-pulse 2s ease-in-out infinite',
+				'glow': 'glow 2s ease-in-out infinite',
+				'slide-in': 'slide-in 0.3s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+			},
+			backgroundImage: {
+				'neon-gradient': 'linear-gradient(135deg, #ff10f0, #00d4ff, #39ff14)',
+				'dark-gradient': 'linear-gradient(135deg, #0a0a0f, #1a1a2e, #16213e)',
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
