@@ -106,11 +106,6 @@ Click the green **Supabase** button in Lovable to add:
 ### Custom APIs
 Integrate with makeup APIs, AI services, or e-commerce platforms via the chat interface.
 
-## 📚 Documentation Links
-
-- [Lovable Documentation](https://docs.lovable.dev/)
-- [Supabase Integration](https://docs.lovable.dev/integrations/supabase/)
-- [Troubleshooting Guide](https://docs.lovable.dev/tips-tricks/troubleshooting)
 
 ## 🤝 Contributing
 
@@ -119,16 +114,3 @@ Integrate with makeup APIs, AI services, or e-commerce platforms via the chat in
 3. Make your changes
 4. Submit a pull request
 
-## 📄 License
-
-This project is built with [Lovable](https://lovable.dev) - AI-powered web app creation.
-
-## 🆘 Support
-
-- [Lovable Discord](https://discord.com/channels/1119885301872070706/1280461670979993613)
-- [GitHub Issues](your-repo-url/issues)
-- [Lovable Docs](https://docs.lovable.dev/)
-
----
-
-**Built with ❤️ using Lovable - Where AI meets web development**
